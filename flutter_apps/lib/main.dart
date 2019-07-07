@@ -8,6 +8,7 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // to remove debug banner from the app
       debugShowCheckedModeBanner: false,
       title: "Getting Started with Flutter",
       home: Scaffold(
