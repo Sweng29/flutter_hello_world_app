@@ -1,26 +1,20 @@
 import 'package:flutter/material.dart';
 
+import 'app_screens/second_screen.dart';
+
 void main() => runApp(new FirstScreen());
 
 class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Getting Started with Flutter",
       home: Scaffold(
         appBar: AppBar(
           title: Text("Flutter Appbar"),
         ),
-        body: Material(
-          color: Colors.blueAccent,
-          child: Center(
-            child: Text(
-              "Hello World",
-              textDirection: TextDirection.ltr,
-              style: TextStyle(color: Colors.white, fontSize: 40.0),
-            ),
-          ),
-        ),
+        body: new SecondScreen(),
       ),
     );
   }
