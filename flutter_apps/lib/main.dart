@@ -13,7 +13,14 @@ class FirstScreen extends StatelessWidget {
       title: "Getting Started with Flutter",
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Flutter Appbar"),
+          title: Text(
+            "Flutter Appbar",
+            style: TextStyle(
+                fontSize: 20.0,
+                fontFamily: 'Raleway',
+                fontWeight: FontWeight.bold,
+                fontStyle: FontStyle.normal),
+          ),
         ),
         body: new SecondScreen(),
       ),
