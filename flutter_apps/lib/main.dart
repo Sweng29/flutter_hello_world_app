@@ -8,9 +8,17 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: //Home(),
           Scaffold(
-              appBar: AppBar(
-                title: Text("Reservation System"),
-              ),
-              body: LongListView() //ListViewWidget(),
-              )));
+        appBar: AppBar(
+          title: Text("Reservation System"),
+        ),
+        body: LongListView() //ListViewWidget(),
+        ,
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            debugPrint("Floating action button pressed.");
+          },
+          child: Icon(Icons.plus_one),
+          tooltip: "Floating action button pressed.",
+        ),
+      )));
 }
